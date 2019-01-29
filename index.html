@@ -71,9 +71,6 @@
                 <li>
                     <a href="#for-loop-let">for loop w/ "let"</a>
                 </li> 
-                <li>
-                    <a href="#sim-for-loop-let">simulated for w/ "let"</a>
-                </li> 
                 <br>
                 <li>
                     <a href="../index.html">home</a>
@@ -503,55 +500,6 @@
                         "for (let stepper = 0; stepper <2; stepper++) { \n" +
                         "    result += stepper; \n" +
                         "}; \n" +
-
-                        "console.log(result);";
-                    init_section(config);
-                </script>
-            </div>
-            <div id="sim-for-loop-let" class="container-fluid">
-               <div>
-                    <h2>Simulated For Loop with "let"</h2>
-                    <!-- your problem description goes here -->         
-                    The execution behavior of a for loop with "let", simulated using a while loop.
-                        <br>
-                    You can study this example in more detail by following the guided step-through <a href="https://github.com/elewa-academy/scope-and-control-flow/tree/master/3-loops/3-for-loops/for-loop-let" target="_blank">right here<a>.
-                        <br>
-                        <br>
-                </div>
-
-                <!-- what you see -->
-                <div id="shuffled-sim-for-loop-let" class="sortable-code"></div>
-                <div id="sorted-sim-for-loop-let" class="sortable-code"></div> 
-                <div style="clear:both;"></div>
-                <p>
-                    <a href="#" class="btn btn-secondary" id="reshuffle-sim-for-loop-let">Re-Shuffle</a>
-                    <a href="#" class="btn btn-secondary" id="feedback-sim-for-loop-let">Get feedback</a>
-                </p>
-                <br>
-                <hr>
-
-                <!-- configure this section's challenge -->
-                <script>
-                    <!-- define your challenge here -->
-                    config = {};
-
-                    config.shuffled_id = "shuffled-sim-for-loop-let";
-                    config.sorted_id = "sorted-sim-for-loop-let";
-                    config.reshuffle_id = "reshuffle-sim-for-loop-let";
-                    config.feedback_id = "feedback-sim-for-loop-let";
-                    config.challenge = 
-                        "let result = \'\'; \n" +
-
-                        "{ // block 1 \n" +
-                        "  let stepper_1 = 0; \n" +
-                        "  { // block 2 \n" +
-                        "    let stepper_2 = stepper_1; \n" +
-                        "    while (stepper_2 < 2) { \n" +
-                        "      result += stepper_2; \n" +
-                        "      stepper_2++; \n" +
-                        "    }; // while \n" +
-                        "  }; // block 2 \n" +
-                        "}; // block 1 \n" +
 
                         "console.log(result);";
                     init_section(config);
